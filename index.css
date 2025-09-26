@@ -10,7 +10,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);   
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
 }
 .calci{
     position: relative;
@@ -51,4 +53,34 @@ button{
 }
 .opt{
     color: blueviolet;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calci {
+        left: 0;              
+        width: 100%;          
+        max-width: 350px;      
+        margin: 0 auto;       
+        padding: 15px;
+    }
+
+    input {
+        font-size: 28px;      
+        padding: 15px;
+    }
+
+    button {
+        width: 55px;
+        height: 55px;
+        font-size: 18px;
+        margin: 4px;
+    }
 }
